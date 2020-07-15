@@ -15,36 +15,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P90-VD-zNf">
-                                <rect key="frame" x="0.0" y="227" width="439" height="490"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <state key="normal" backgroundImage="Learnbutton"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7z-II-oyk">
-                                <rect key="frame" x="0.0" y="422" width="446" height="509"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Aboutbutton"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="STEM in COLOR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3c-h7-lvD">
-                                <rect key="frame" x="92" y="227" width="230" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="29"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stem in Color Logo (2)" translatesAutoresizingMaskIntoConstraints="NO" id="1NF-ug-TOc">
-                                <rect key="frame" x="62" y="79" width="290" height="245"/>
+                                <rect key="frame" x="38" y="13" width="323" height="337"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGA-lm-Ss8">
-                                <rect key="frame" x="7" y="332" width="432" height="480"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Storyboard pic" translatesAutoresizingMaskIntoConstraints="NO" id="ilo-w2-A1Y">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stem in Color Logo (2)" translatesAutoresizingMaskIntoConstraints="NO" id="tlG-2v-IAw">
+                                <rect key="frame" x="50" y="25" width="315" height="343"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Quizbutton"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M72-Jc-rIr">
+                                <rect key="frame" x="61" y="220" width="293" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Learn logo"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgq-mG-BM6">
+                                <rect key="frame" x="68" y="581" width="293" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="LOGOS (2)"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15i-81-oQJ">
+                                <rect key="frame" x="61" y="416" width="293" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Quiz Logo"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.87141942198377031" blue="0.66427890957752644" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ilo-w2-A1Y" secondAttribute="trailing" id="0EP-AS-nrG"/>
+                            <constraint firstItem="ilo-w2-A1Y" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2I6-Ci-1im"/>
+                            <constraint firstAttribute="bottom" secondItem="ilo-w2-A1Y" secondAttribute="bottom" id="G12-gt-HYT"/>
+                            <constraint firstItem="ilo-w2-A1Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GBA-HN-qZw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -60,13 +63,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ABOUT THE DEVELOPERS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wV9-1y-Qv8">
-                                <rect key="frame" x="43" y="130" width="328" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWd-nd-H16">
                                 <rect key="frame" x="20" y="204" width="374" height="569"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -74,6 +70,13 @@
 Cum ne exerci facilis nominavi, ne illum tractatos assentior vel, per stet malis mentitum ne. Vix reque feugait signiferumque no. Pro lorem offendit pericula an, et fierent periculis sit. Ut fabulas ornatus pri, ex qui deleniti electram, at mel dolore graece.
 </string>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ABOUT THE DEVELOPERS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wV9-1y-Qv8">
+                                <rect key="frame" x="28" y="136" width="359" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -103,9 +106,10 @@ Cum ne exerci facilis nominavi, ne illum tractatos assentior vel, per stet malis
         </scene>
     </scenes>
     <resources>
-        <image name="Aboutbutton" width="750" height="750"/>
-        <image name="Learnbutton" width="750" height="750"/>
-        <image name="Quizbutton" width="750" height="750"/>
+        <image name="LOGOS (2)" width="1500" height="1500"/>
+        <image name="Learn logo" width="1500" height="1500"/>
+        <image name="Main Storyboard pic" width="474" height="842"/>
+        <image name="Quiz Logo" width="1500" height="1500"/>
         <image name="Stem in Color Logo (2)" width="2250" height="2250"/>
     </resources>
 </document>
