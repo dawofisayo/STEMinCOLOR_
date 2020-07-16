@@ -18,7 +18,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackGround" translatesAutoresizingMaskIntoConstraints="NO" id="qD6-OX-WlE">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stem in Color Logo (2)" translatesAutoresizingMaskIntoConstraints="NO" id="R9Q-ar-8X2">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LOGO" translatesAutoresizingMaskIntoConstraints="NO" id="R9Q-ar-8X2">
                                 <rect key="frame" x="7" y="295" width="400" height="463"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -40,6 +40,6 @@
     </scenes>
     <resources>
         <image name="BackGround" width="600" height="1066"/>
-        <image name="Stem in Color Logo (2)" width="2250" height="2250"/>
+        <image name="LOGO" width="3000" height="3000"/>
     </resources>
 </document>

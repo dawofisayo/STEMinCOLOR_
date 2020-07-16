@@ -22,24 +22,24 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Storyboard pic" translatesAutoresizingMaskIntoConstraints="NO" id="ilo-w2-A1Y">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stem in Color Logo (2)" translatesAutoresizingMaskIntoConstraints="NO" id="tlG-2v-IAw">
-                                <rect key="frame" x="50" y="25" width="315" height="343"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stem in Color Logo " translatesAutoresizingMaskIntoConstraints="NO" id="tlG-2v-IAw">
+                                <rect key="frame" x="39" y="10" width="315" height="343"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M72-Jc-rIr">
-                                <rect key="frame" x="61" y="220" width="293" height="293"/>
+                                <rect key="frame" x="50" y="192" width="293" height="293"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Learn logo"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgq-mG-BM6">
-                                <rect key="frame" x="68" y="581" width="293" height="293"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="LOGOS (2)"/>
+                                <state key="normal" image="LEARN BUTTON"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15i-81-oQJ">
-                                <rect key="frame" x="61" y="416" width="293" height="293"/>
+                                <rect key="frame" x="68" y="412" width="293" height="293"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Quiz Logo"/>
+                                <state key="normal" image="QUIZ BUTTON"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgq-mG-BM6">
+                                <rect key="frame" x="61" y="603" width="293" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="DEVELOPERS BUTTON"/>
                             </button>
                         </subviews>
                         <constraints>
@@ -54,6 +54,161 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CAQ-53-FNX">
+            <objects>
+                <viewController id="N1l-Pa-kki" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xVj-r8-ZFR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ANNE EASLEY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENu-p9-52y">
+                                <rect key="frame" x="103" y="341" width="208" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8K-zj-oep">
+                                <rect key="frame" x="20" y="390" width="374" height="472"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">A computer scientist, mathematician, and a rocket scientist
+A rocket scientist who worked on several Nasa projects for more than 30 years
+She was born in 1933 and was raised in Birmingham, Alabama 
+She was raised by her single mother who encouraged her and constantly let her know that she could anything that she wanted if she worked for it
+Annie Easley helped train several African Americans to take the voting test in Alabama, before 
+She learned FORTRAN and assembly language, allowing her to become a programmer
+She worked on batteries as well as other studies that involve battery-powered vehicles(this is similar to the hybrid cars of today)
+At Nasa she:
+Helped design and test the NASA nuclear reactor at Plum Brook
+Worked on shuttle launches which measured the destruction of the ozone
+She is most known for her work on the Centaur rocket, the first of its kind
+Struggles she faced at NASA as a woman of color:
+Wasn’t given the financial aid to pay for the extra college courses that were given to all other employees
+She was used in promotional photographs but where she saw that specific image of her, she was always cut out no matter where it was used, solely leaving her white counterparts in the photograph
+</mutableString>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Anne Easley" translatesAutoresizingMaskIntoConstraints="NO" id="Ax7-Fw-xJu">
+                                <rect key="frame" x="67" y="57" width="280" height="263"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="d4L-UH-tvT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FFd-fe-kOQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1639" y="118"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WCd-U7-dnj">
+            <objects>
+                <viewController id="gRc-Jg-sGj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="caY-6n-n9y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dr. Gladys Mae West" translatesAutoresizingMaskIntoConstraints="NO" id="dVY-bz-lLZ">
+                                <rect key="frame" x="59" y="57" width="286" height="252"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLr-gF-jrv">
+                                <rect key="frame" x="20" y="367" width="374" height="503"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">American mathematician
+Worked in astronomical studies
+She contributed to the mathematical model of the shape of Earth
+Her work would later be used in the GPS(Global Positioning System)
+She was able to create the GPS because of her development of the satellite geodesy models 
+She was valedictorian of her graduating high school class in 1948
+She majored in mathematics at Virginia State University
+Fun fact: she was a member of the Alpha Kappa Alpha sorority 
+Despite helping create the GPS so early on, she finally received recognition for her work in early 2018 officially by the United States Military 
+Despite creating the GPS, she still prefers making her own calculations and using a paper map
+She was a human-computer, she later changed over to programming computers and other machines
+She worked in a study that proved the regularity of Pluto’s motion in relation to Neptune, using this knowledge, she later joined the Seasat project to precisely measure the distance over Earth’s surface
+At her first job at the Naval Surface Warfare Center, Dr. West was one of four black employees 
+</mutableString>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DR. GLADYS MAE WEST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32i-Xa-Jag">
+                                <rect key="frame" x="42" y="326" width="330" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="wD2-fD-Wsy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HjN-AU-dTy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2313" y="118"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rh4-Vv-fjw">
+            <objects>
+                <viewController id="RkV-MB-Xfj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qh6-uT-deo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Alice Ball" translatesAutoresizingMaskIntoConstraints="NO" id="Usj-PM-sFQ">
+                                <rect key="frame" x="68" y="76" width="278" height="234"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ALICE BALL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5v-sr-Eq1">
+                                <rect key="frame" x="116" y="338" width="183" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="nAD-gE-YQe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aj9-0R-LsD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3676.811594202899" y="117.85714285714285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QhL-c9-5qC">
+            <objects>
+                <viewController id="Qcr-7l-MrW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ce1-Wd-L1o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dr. Shirley Jackson" translatesAutoresizingMaskIntoConstraints="NO" id="ar0-uO-hqh">
+                                <rect key="frame" x="75" y="73" width="286" height="243"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DR. SHIRLEY JACKSON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXY-wM-dUb">
+                                <rect key="frame" x="59" y="357" width="318" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="3y0-CN-GMr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wSc-bS-egM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4343.4782608695659" y="117.85714285714285"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4gV-gp-Jfr">
@@ -87,29 +242,153 @@ Cum ne exerci facilis nominavi, ne illum tractatos assentior vel, per stet malis
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vwn-tg-TeR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="824.63768115942037" y="117.85714285714285"/>
+            <point key="canvasLocation" x="4984" y="118"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="Om5-ED-TD3">
+        <scene sceneID="FGM-9x-6wg">
             <objects>
-                <viewController id="Afx-25-vP3" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bpC-m2-1R3">
+                <viewController id="yct-mX-j5q" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iOG-yv-3sW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.99691516160000004" green="0.90132209474560576" blue="0.89548163002650405" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <viewLayoutGuide key="safeArea" id="oj3-95-Zvq"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQQ-Go-4UE">
+                                <rect key="frame" x="31" y="394" width="363" height="448"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Katherine Johnson
+Was born in 1918 in West Virginia
+She worked as a human calculator during the space race in the 1950s and ’60s 
+She loved math from a very young age, was so skilled in subjects like math, that she can be considered a math prodigy
+The third African American to receive a PhD in mathematics recognized her gift and her exceptional abilities at math and encouraged her to pursue in this career(as a mathematician)  he even created a special class for her that was very advanced, covering geometry of outer space
+He recognized her abilities and helped her to learn as much about her passion as possible, allowing her to reach her full potential at the time 
+This man’s name was William Waldron and he was her professor at West Virginia State College
+She graduated college in 1937 with the highest honors
+She was one of three students chosen to desegregate the graduate school at West Virginia University and she was the only woman from this group
+She wasn’t able to graduate because she had to raise her three daughters and her husband also later fell ill and unfortunately died from cancer in 1956
+Her skills in geometry led her to join the team that helped send the first man to the moon
+Fun Facts:
+Has a movie based on her called ‘Hidden Figures’
+Started high school at the age of 10
+She started college at 15
+She is known as a trailblazer
+</mutableString>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="KATHERINE JOHNSON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TzF-c9-ltr">
+                                <rect key="frame" x="58" y="343" width="309" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Katherine Johnson" translatesAutoresizingMaskIntoConstraints="NO" id="j4B-ls-AJs">
+                                <rect key="frame" x="53" y="44" width="309" height="272"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="lWx-n5-Uxt"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vgC-UG-EbC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C8s-oH-5Dy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1612" y="118"/>
+            <point key="canvasLocation" x="2979.7101449275365" y="117.85714285714285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5Ol-AZ-XRj">
+            <objects>
+                <viewController id="Hmp-Jg-Uyp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DvB-FS-8tr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FEX-WN-dAh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NjK-Wf-BbB">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1400"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rnk-hB-tBj">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1400"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JV4-8s-DlC">
+                                                        <rect key="frame" x="0.0" y="-15" width="400" height="400"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="1"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tE-4h-tlS">
+                                                        <rect key="frame" x="8" y="509" width="400" height="400"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="3"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXz-GO-nT2">
+                                                        <rect key="frame" x="8" y="773" width="400" height="400"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="4"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOj-22-ahX">
+                                                        <rect key="frame" x="14" y="1032" width="400" height="400"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="5"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgm-am-HLp">
+                                                        <rect key="frame" x="23" y="261" width="400" height="400"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="2"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="0.87914679929999995" blue="0.92638767440000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1400" id="sI4-7N-L0Q"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="NjK-Wf-BbB" firstAttribute="width" secondItem="gUA-8T-njJ" secondAttribute="width" id="2dl-qL-tTe"/>
+                                    <constraint firstItem="NjK-Wf-BbB" firstAttribute="top" secondItem="mTP-YG-mn5" secondAttribute="top" id="2lp-gM-JTi"/>
+                                    <constraint firstItem="NjK-Wf-BbB" firstAttribute="trailing" secondItem="mTP-YG-mn5" secondAttribute="trailing" id="5cD-Bf-5sI"/>
+                                    <constraint firstItem="NjK-Wf-BbB" firstAttribute="bottom" secondItem="mTP-YG-mn5" secondAttribute="bottom" id="Gli-LU-WFd"/>
+                                    <constraint firstItem="NjK-Wf-BbB" firstAttribute="leading" secondItem="mTP-YG-mn5" secondAttribute="leading" id="oxH-PK-C72"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="mTP-YG-mn5"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="gUA-8T-njJ"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="FEX-WN-dAh" secondAttribute="bottom" id="4bj-Yi-qAz"/>
+                            <constraint firstItem="FEX-WN-dAh" firstAttribute="top" secondItem="DvB-FS-8tr" secondAttribute="top" id="E1r-b0-KFa"/>
+                            <constraint firstAttribute="trailing" secondItem="FEX-WN-dAh" secondAttribute="trailing" id="P4K-0D-MAE"/>
+                            <constraint firstItem="FEX-WN-dAh" firstAttribute="leading" secondItem="DvB-FS-8tr" secondAttribute="leading" id="xCN-60-ni3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RIO-kh-tVQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O5Q-N9-9BI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="943" y="118"/>
         </scene>
     </scenes>
     <resources>
-        <image name="LOGOS (2)" width="1500" height="1500"/>
-        <image name="Learn logo" width="1500" height="1500"/>
+        <image name="1" width="1500" height="1500"/>
+        <image name="2" width="1500" height="1500"/>
+        <image name="3" width="1500" height="1500"/>
+        <image name="4" width="1500" height="1500"/>
+        <image name="5" width="1500" height="1500"/>
+        <image name="Alice Ball" width="238" height="238"/>
+        <image name="Anne Easley" width="498" height="498"/>
+        <image name="DEVELOPERS BUTTON" width="1500" height="1500"/>
+        <image name="Dr. Gladys Mae West" width="267" height="267"/>
+        <image name="Dr. Shirley Jackson" width="539" height="539"/>
+        <image name="Katherine Johnson" width="1986" height="1986"/>
+        <image name="LEARN BUTTON" width="1500" height="1500"/>
         <image name="Main Storyboard pic" width="474" height="842"/>
-        <image name="Quiz Logo" width="1500" height="1500"/>
+        <image name="QUIZ BUTTON" width="1500" height="1500"/>
+        <image name="Stem in Color Logo " width="2250" height="2250"/>
         <image name="Stem in Color Logo (2)" width="2250" height="2250"/>
     </resources>
 </document>
