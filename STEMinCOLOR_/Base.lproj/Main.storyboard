@@ -53,7 +53,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+            <point key="canvasLocation" x="222" y="118"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="CAQ-53-FNX">
@@ -173,6 +173,25 @@ At her first job at the Naval Surface Warfare Center, Dr. West was one of four b
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLO-Gr-lcr">
+                                <rect key="frame" x="31" y="389" width="363" height="473"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">She was born in 1892 in Seattle Washington to a middle class to an upper-middle-class family 
+Her famous achievement was discovering the treatment of leprosy
+She studied the field of chemistry and medicine
+She was a chemist who developed an injectable oil treatment for leprosy that was the most effective until the 1940s, the treatment consisted of an injectable oil extract. This allowed her to become the first person to develop a water-soluble injectable form of chaulmoogra oil that helped relieve symptoms of Hansen’s disease.  She accomplished this when she was very young, she was just 23 at the time.
+She created the technique which is known as “the ball method”
+She managed to publish a 10-page article titled “Benzoylations” in the very well renowned journal of the American Chemical Society
+This achievement was rare for a woman of any race at the time, especially a black woman
+When applying to colleges she received numerous scholarships to pursue her studies
+She became the first woman and the first African American to graduate from the University of Hawaii with a master’s degree in 1915. She earned a degree in pharmaceutical chemistry as well as a degree in pharmacy.
+She received the highest award for her work, which is the Regents Medal of Distinction
+February 29 2000, was when Hawaii’s governor issued that this date would officially be known as Alice Paul Day
+</mutableString>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="nAD-gE-YQe"/>
@@ -195,9 +214,27 @@ At her first job at the Naval Surface Warfare Center, Dr. West was one of four b
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DR. SHIRLEY JACKSON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXY-wM-dUb">
-                                <rect key="frame" x="59" y="357" width="318" height="39"/>
+                                <rect key="frame" x="43" y="357" width="318" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7E-Yl-pld">
+                                <rect key="frame" x="20" y="422" width="382" height="423"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Was born in Washington DC on August 5, 1946
+In high school she graduated at the top of her class in 1964, she was in accelerated math and science program
+She is the first black woman to earn a doctorate from the Massachusetts Institute of Technology, she was also one of two black women to receive a doctorate in physics in the United States of America. Her degree was specifically in nuclear physics, this was also where she completed her bachelor’s degree. 
+She also received the National Medal of Science for Physical Science
+She invented call id and caller waiting
+In 1995, she was appointed to serve as the Chair of the U.S. Nuclear Regulatory Commission(NRC) by Bill Clinton. She became the first woman and black person to hold this position.
+She later became the 18th president of the oldest technological research university in the USA and again she was the first woman and black person to do so.
+She was also the first woman to serve as the president of the National Society of Black Physicists in 1983
+She received over 50 honorary doctoral degrees and has been appointed as Co-Chair of the President’s Intelligence Advisory in 2014 by Barack Obama
+Time Magazine also called Dr. Shirley Ann Jackson as “perhaps the ultimate role model for women in science” in 2005
+</mutableString>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -242,7 +279,7 @@ Cum ne exerci facilis nominavi, ne illum tractatos assentior vel, per stet malis
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vwn-tg-TeR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4984" y="118"/>
+            <point key="canvasLocation" x="4997" y="118"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="FGM-9x-6wg">
