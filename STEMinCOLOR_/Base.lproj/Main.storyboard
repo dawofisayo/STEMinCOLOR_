@@ -629,17 +629,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ANNE EASLEY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENu-p9-52y">
-                                <rect key="frame" x="103" y="304" width="208" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="34"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8K-zj-oep">
-                                <rect key="frame" x="20" y="359" width="374" height="472"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">A computer scientist, mathematician, and a rocket scientist
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="54f-iG-j8I">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4Nc-1h-sWi">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="imS-Ei-sgg">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Annie Jean Easley" translatesAutoresizingMaskIntoConstraints="NO" id="Z2J-vf-6FA">
+                                                        <rect key="frame" x="56" y="63" width="302" height="251"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xC-cO-mdL">
+                                                        <rect key="frame" x="21" y="383" width="373" height="696"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <mutableString key="text">A computer scientist, mathematician, and a rocket scientist
 A rocket scientist who worked on several Nasa projects for more than 30 years
 She was born in 1933 and was raised in Birmingham, Alabama 
 She was raised by her single mother who encouraged her and constantly let her know that she could anything that she wanted if she worked for it
@@ -652,25 +658,52 @@ Worked on shuttle launches which measured the destruction of the ozone
 She is most known for her work on the Centaur rocket, the first of its kind
 Struggles she faced at NASA as a woman of color:
 Wasn’t given the financial aid to pay for the extra college courses that were given to all other employees
-She was used in promotional photographs but where she saw that specific image of her, she was always cut out no matter where it was used, solely leaving her white counterparts in the photograph
-</string>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Annie Jean Easley" translatesAutoresizingMaskIntoConstraints="NO" id="Ax7-Fw-xJu">
-                                <rect key="frame" x="67" y="32" width="280" height="263"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+She was used in promotional photographs but where she saw that specific image of her, she was always cut out no matter where it was used, solely leaving her white counterparts in the photograph</mutableString>
+                                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ANNE JEAN EASLEY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tR8-Sr-urp">
+                                                        <rect key="frame" x="86" y="336" width="272" height="39"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="32"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.90881385430992379" green="0.87676066035004907" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1100" id="BpN-qT-p2P"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4Nc-1h-sWi" firstAttribute="leading" secondItem="e6d-uC-Eyh" secondAttribute="leading" id="CYT-Wh-z1h"/>
+                                    <constraint firstItem="4Nc-1h-sWi" firstAttribute="top" secondItem="e6d-uC-Eyh" secondAttribute="top" id="IrW-yz-d9m"/>
+                                    <constraint firstItem="4Nc-1h-sWi" firstAttribute="width" secondItem="bm3-XU-3kW" secondAttribute="width" id="WKw-hH-KV3"/>
+                                    <constraint firstItem="4Nc-1h-sWi" firstAttribute="trailing" secondItem="e6d-uC-Eyh" secondAttribute="trailing" id="fcB-Y9-D9d"/>
+                                    <constraint firstItem="4Nc-1h-sWi" firstAttribute="bottom" secondItem="e6d-uC-Eyh" secondAttribute="bottom" id="uFK-Dp-Sqi"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="e6d-uC-Eyh"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="bm3-XU-3kW"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.87990649559321177" green="0.88921073532418282" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="54f-iG-j8I" firstAttribute="top" secondItem="xVj-r8-ZFR" secondAttribute="top" id="6tB-34-BBo"/>
+                            <constraint firstItem="54f-iG-j8I" firstAttribute="leading" secondItem="xVj-r8-ZFR" secondAttribute="leading" id="BZH-7v-oRA"/>
+                            <constraint firstAttribute="trailing" secondItem="54f-iG-j8I" secondAttribute="trailing" id="H0C-6s-8Q5"/>
+                            <constraint firstAttribute="bottom" secondItem="54f-iG-j8I" secondAttribute="bottom" id="cW5-Ez-eku"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="d4L-UH-tvT"/>
                     </view>
                     <navigationItem key="navigationItem" id="sus-eW-xh5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FFd-fe-kOQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1639" y="118"/>
+            <point key="canvasLocation" x="1637.68115942029" y="117.85714285714285"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="WCd-U7-dnj">
@@ -680,47 +713,83 @@ She was used in promotional photographs but where she saw that specific image of
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dr. Gladys Mae West" translatesAutoresizingMaskIntoConstraints="NO" id="dVY-bz-lLZ">
-                                <rect key="frame" x="59" y="41" width="286" height="252"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLr-gF-jrv">
-                                <rect key="frame" x="20" y="338" width="374" height="503"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">American mathematician
-Worked in astronomical studies
-She contributed to the mathematical model of the shape of Earth
-Her work would later be used in the GPS(Global Positioning System)
-She was able to create the GPS because of her development of the satellite geodesy models 
-She was valedictorian of her graduating high school class in 1948
-She majored in mathematics at Virginia State University
-Fun fact: she was a member of the Alpha Kappa Alpha sorority 
-Despite helping create the GPS so early on, she finally received recognition for her work in early 2018 officially by the United States Military 
-Despite creating the GPS, she still prefers making her own calculations and using a paper map
-She was a human-computer, she later changed over to programming computers and other machines
-She worked in a study that proved the regularity of Pluto’s motion in relation to Neptune, using this knowledge, she later joined the Seasat project to precisely measure the distance over Earth’s surface
-At her first job at the Naval Surface Warfare Center, Dr. West was one of four black employees 
-</string>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DR. GLADYS MAE WEST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32i-Xa-Jag">
-                                <rect key="frame" x="42" y="306" width="330" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h0h-0g-dDt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Fej-Xb-Div">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eVk-dg-q3p">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dr. Gladys Mae West" translatesAutoresizingMaskIntoConstraints="NO" id="f0x-N1-iuv">
+                                                        <rect key="frame" x="68" y="45" width="279" height="253"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="KATHERINE JOHNSON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="940-vY-p57">
+                                                        <rect key="frame" x="68" y="334" width="313" height="39"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="32"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnE-tl-apr">
+                                                        <rect key="frame" x="19" y="358" width="386" height="677"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <mutableString key="text">Was born in 1918 in West Virginia
+She worked as a human calculator during the space race in the 1950s and ’60s 
+She loved math from a very young age, was so skilled in subjects like math, that she can be considered a math prodigy
+The third African American to receive a PhD in mathematics recognized her gift and her exceptional abilities at math and encouraged her to pursue in this career(as a mathematician)  he even created a special class for her that was very advanced, covering geometry of outer space
+He recognized her abilities and helped her to learn as much about her passion as possible, allowing her to reach her full potential at the time 
+This man’s name was William Waldron and he was her professor at West Virginia State College
+She graduated college in 1937 with the highest honors
+She was one of three students chosen to desegregate the graduate school at West Virginia University and she was the only woman from this group
+She wasn’t able to graduate because she had to raise her three daughters and her husband also later fell ill and unfortunately died from cancer in 1956
+Her skills in geometry led her to join the team that helped send the first man to the moon
+Fun Facts:
+Has a movie based on her called ‘Hidden Figures’
+Started high school at the age of 10
+She started college at 15
+She is known as a trailblazer
+</mutableString>
+                                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.89567895908465933" green="0.93637031700333762" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1100" id="jU1-Z7-scF"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Fej-Xb-Div" firstAttribute="bottom" secondItem="hTk-gJ-AeU" secondAttribute="bottom" constant="842" id="6MD-wJ-tCQ"/>
+                                    <constraint firstItem="Fej-Xb-Div" firstAttribute="top" secondItem="hTk-gJ-AeU" secondAttribute="top" id="7eM-Qi-qzH"/>
+                                    <constraint firstItem="Fej-Xb-Div" firstAttribute="trailing" secondItem="hTk-gJ-AeU" secondAttribute="trailing" constant="414" id="9cJ-cI-yog"/>
+                                    <constraint firstItem="Fej-Xb-Div" firstAttribute="width" secondItem="OOX-3z-jY2" secondAttribute="width" id="qiI-cs-O3q"/>
+                                    <constraint firstItem="Fej-Xb-Div" firstAttribute="leading" secondItem="hTk-gJ-AeU" secondAttribute="leading" id="sgD-ia-hur"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="hTk-gJ-AeU"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="OOX-3z-jY2"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.95074782656986367" green="1" blue="0.98693225915984895" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="h0h-0g-dDt" secondAttribute="bottom" id="AJw-6e-MHE"/>
+                            <constraint firstAttribute="trailing" secondItem="h0h-0g-dDt" secondAttribute="trailing" id="D61-8E-yrc"/>
+                            <constraint firstItem="h0h-0g-dDt" firstAttribute="top" secondItem="caY-6n-n9y" secondAttribute="top" id="VtV-Os-YUc"/>
+                            <constraint firstItem="h0h-0g-dDt" firstAttribute="leading" secondItem="caY-6n-n9y" secondAttribute="leading" id="p7u-qP-0mQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wD2-fD-Wsy"/>
                     </view>
                     <navigationItem key="navigationItem" id="DGX-uL-dWb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HjN-AU-dTy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2313" y="118"/>
+            <point key="canvasLocation" x="2311.594202898551" y="117.85714285714285"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="rh4-Vv-fjw">
@@ -790,7 +859,7 @@ February 29 2000, was when Hawaii’s governor issued that this date would offic
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7E-Yl-pld">
-                                <rect key="frame" x="20" y="422" width="382" height="423"/>
+                                <rect key="frame" x="0.0" y="404" width="382" height="423"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Was born in Washington DC on August 5, 1946
 In high school she graduated at the top of her class in 1964, she was in accelerated math and science program
@@ -825,13 +894,12 @@ Time Magazine also called Dr. Shirley Ann Jackson as “perhaps the ultimate rol
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWd-nd-H16">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWd-nd-H16">
                                 <rect key="frame" x="20" y="204" width="374" height="569"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Lorem ipsum dolor sit amet, nec ei melius omnesque placerat, choro lucilius ad his. Amet maiorum id vix. Fastidii detraxit te sit. Ne regione alienum tibique sea, nec et electram scribentur. Ex vel dolorum inimicus, per putant scaevola ut. Eam et discere saperet facilisis. 
-Cum ne exerci facilis nominavi, ne illum tractatos assentior vel, per stet malis mentitum ne. Vix reque feugait signiferumque no. Pro lorem offendit pericula an, et fierent periculis sit. Ut fabulas ornatus pri, ex qui deleniti electram, at mel dolore graece.
-</string>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="26"/>
+                                <mutableString key="text">Aiknoor, Damiilola, and Richael  are women of color who are planning to pursue jobs in the field of STEM. The quickly relized there was a lack of representation and acknowlegement of the work of women of color in STEM. They created this app to highlight their work in the field in attempt to encourage others who might be interested in STEM in the future.  
+</mutableString>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
