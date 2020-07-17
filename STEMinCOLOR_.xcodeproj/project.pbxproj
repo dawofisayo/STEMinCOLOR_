@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37B7CE6C24C0D2E400226C2D /* quizintroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7CE6B24C0D2E400226C2D /* quizintroViewController.swift */; };
+		37B7CE6E24C0D5A100226C2D /* qoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7CE6D24C0D5A100226C2D /* qoneViewController.swift */; };
+		37B7CE7024C0DFE700226C2D /* qtwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7CE6F24C0DFE700226C2D /* qtwoViewController.swift */; };
+		37B7CE7224C0EAC800226C2D /* qthreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7CE7124C0EAC800226C2D /* qthreeViewController.swift */; };
+		37B7CE7424C0FD6100226C2D /* qfourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7CE7324C0FD6100226C2D /* qfourViewController.swift */; };
+		37B7CE7624C101F700226C2D /* qfiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7CE7524C101F700226C2D /* qfiveViewController.swift */; };
+		37B7CE7A24C1065F00226C2D /* resultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B7CE7924C1065F00226C2D /* resultsViewController.swift */; };
 		37C7D20624BE2B16004DF36D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C7D20524BE2B16004DF36D /* AppDelegate.swift */; };
 		37C7D20824BE2B16004DF36D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C7D20724BE2B16004DF36D /* SceneDelegate.swift */; };
 		37C7D20A24BE2B16004DF36D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C7D20924BE2B16004DF36D /* ViewController.swift */; };
@@ -17,6 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37B7CE6B24C0D2E400226C2D /* quizintroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quizintroViewController.swift; sourceTree = "<group>"; };
+		37B7CE6D24C0D5A100226C2D /* qoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qoneViewController.swift; sourceTree = "<group>"; };
+		37B7CE6F24C0DFE700226C2D /* qtwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qtwoViewController.swift; sourceTree = "<group>"; };
+		37B7CE7124C0EAC800226C2D /* qthreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qthreeViewController.swift; sourceTree = "<group>"; };
+		37B7CE7324C0FD6100226C2D /* qfourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qfourViewController.swift; sourceTree = "<group>"; };
+		37B7CE7524C101F700226C2D /* qfiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qfiveViewController.swift; sourceTree = "<group>"; };
+		37B7CE7924C1065F00226C2D /* resultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultsViewController.swift; sourceTree = "<group>"; };
 		37C7D20224BE2B16004DF36D /* STEMinCOLOR_.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STEMinCOLOR_.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C7D20524BE2B16004DF36D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37C7D20724BE2B16004DF36D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +76,13 @@
 				37C7D20724BE2B16004DF36D /* SceneDelegate.swift */,
 				37C7D20924BE2B16004DF36D /* ViewController.swift */,
 				37C7D20B24BE2B16004DF36D /* Main.storyboard */,
+				37B7CE7924C1065F00226C2D /* resultsViewController.swift */,
+				37B7CE7524C101F700226C2D /* qfiveViewController.swift */,
+				37B7CE7324C0FD6100226C2D /* qfourViewController.swift */,
+				37B7CE6F24C0DFE700226C2D /* qtwoViewController.swift */,
+				37B7CE7124C0EAC800226C2D /* qthreeViewController.swift */,
+				37B7CE6D24C0D5A100226C2D /* qoneViewController.swift */,
+				37B7CE6B24C0D2E400226C2D /* quizintroViewController.swift */,
 				37C7D21124BE2B17004DF36D /* Assets.xcassets */,
 				37C7D21324BE2B17004DF36D /* LaunchScreen.storyboard */,
 				37C7D21624BE2B17004DF36D /* Info.plist */,
@@ -145,6 +166,13 @@
 				37C7D20624BE2B16004DF36D /* AppDelegate.swift in Sources */,
 				37C7D20824BE2B16004DF36D /* SceneDelegate.swift in Sources */,
 				37C7D21024BE2B16004DF36D /* STEMinCOLOR_.xcdatamodeld in Sources */,
+				37B7CE6C24C0D2E400226C2D /* quizintroViewController.swift in Sources */,
+				37B7CE7224C0EAC800226C2D /* qthreeViewController.swift in Sources */,
+				37B7CE7624C101F700226C2D /* qfiveViewController.swift in Sources */,
+				37B7CE7424C0FD6100226C2D /* qfourViewController.swift in Sources */,
+				37B7CE6E24C0D5A100226C2D /* qoneViewController.swift in Sources */,
+				37B7CE7024C0DFE700226C2D /* qtwoViewController.swift in Sources */,
+				37B7CE7A24C1065F00226C2D /* resultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +323,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "me.STEMinCOLOR-";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dami.STEMinCOLOR-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,7 +341,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "me.STEMinCOLOR-";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dami.STEMinCOLOR-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

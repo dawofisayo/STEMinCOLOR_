@@ -12,7 +12,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="STEMinCOLOR_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stem in Color Logo (2)" translatesAutoresizingMaskIntoConstraints="NO" id="1NF-ug-TOc">
@@ -20,7 +20,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main Storyboard pic" translatesAutoresizingMaskIntoConstraints="NO" id="ilo-w2-A1Y">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stem in Color Logo " translatesAutoresizingMaskIntoConstraints="NO" id="tlG-2v-IAw">
                                 <rect key="frame" x="39" y="10" width="315" height="343"/>
@@ -30,16 +30,25 @@
                                 <rect key="frame" x="50" y="192" width="293" height="293"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="LEARN BUTTON"/>
+                                <connections>
+                                    <segue destination="Hmp-Jg-Uyp" kind="show" id="SFu-Ef-m6N"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15i-81-oQJ">
                                 <rect key="frame" x="68" y="412" width="293" height="293"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="QUIZ BUTTON"/>
+                                <connections>
+                                    <segue destination="5rb-Tl-017" kind="show" id="os1-S7-BWd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgq-mG-BM6">
                                 <rect key="frame" x="61" y="603" width="293" height="293"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="DEVELOPERS BUTTON"/>
+                                <connections>
+                                    <segue destination="eVC-Pv-IMK" kind="show" id="zKS-ZW-Fr6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -50,30 +59,512 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="oeR-yF-Rv5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="222" y="118"/>
+        </scene>
+        <!--Quizintro View Controller-->
+        <scene sceneID="7vG-ut-SXO">
+            <objects>
+                <viewController id="5rb-Tl-017" customClass="quizintroViewController" customModule="STEMinCOLOR_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bDi-77-SpG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPr-lR-lfJ">
+                                <rect key="frame" x="122" y="593" width="171" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.82344995649999997" green="0.92530796689999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Get Started!">
+                                    <color key="titleColor" red="0.47862745243371752" green="0.0" blue="0.99691516160000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4p3-N4-qh2" kind="show" id="ekb-Vw-yDl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4D-3t-now">
+                                <rect key="frame" x="6" y="230" width="402" height="216"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">There are so many pinoeering Women of Color in STEM. Take this quiz and find out who you should learn more about based on your interests!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="3BG-Il-bT8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3kh-Rl-tW8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vxh-1u-1Rx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="215.94202898550725" y="835.71428571428567"/>
+        </scene>
+        <!--Qone View Controller-->
+        <scene sceneID="kLy-CG-3cy">
+            <objects>
+                <viewController id="4p3-N4-qh2" customClass="qoneViewController" customModule="STEMinCOLOR_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="raz-HI-UCy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tew-3q-mwq">
+                                <rect key="frame" x="136" y="88" width="142" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZpJ-u7-EfU">
+                                <rect key="frame" x="21" y="214" width="372" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Which field seems more interesting to you?
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1u-Wy-6NK">
+                                <rect key="frame" x="171" y="346" width="73" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="astronomy"/>
+                                <connections>
+                                    <action selector="west1:" destination="4p3-N4-qh2" eventType="touchUpInside" id="yAB-DR-UMn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIH-wN-JsK">
+                                <rect key="frame" x="145" y="406" width="125" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Computer science"/>
+                                <connections>
+                                    <action selector="easley1:" destination="4p3-N4-qh2" eventType="touchUpInside" id="lox-bU-xWd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3OH-CN-hCO">
+                                <rect key="frame" x="173" y="532" width="69" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="pharmacy"/>
+                                <connections>
+                                    <action selector="ball1:" destination="4p3-N4-qh2" eventType="touchUpInside" id="EbQ-QW-K5z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekZ-Ea-cEL">
+                                <rect key="frame" x="125" y="608" width="165" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Computer programming"/>
+                                <connections>
+                                    <action selector="Johnson1:" destination="4p3-N4-qh2" eventType="touchUpInside" id="rLo-UP-7h8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIg-DU-bT9">
+                                <rect key="frame" x="181" y="477" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="physics"/>
+                                <connections>
+                                    <action selector="jackson1:" destination="4p3-N4-qh2" eventType="touchUpInside" id="usM-xb-epW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="IBY-rC-u5y"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="g0u-P7-ihR"/>
+                    <connections>
+                        <outlet property="ques1" destination="ZpJ-u7-EfU" id="tJm-tZ-6yZ"/>
+                        <outlet property="t1" destination="tew-3q-mwq" id="5cU-xQ-S8a"/>
+                        <segue destination="kAg-zJ-MJV" kind="presentation" identifier="onetotwo" id="sF9-QJ-gjz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bkq-0B-oga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1004.3478260869566" y="836.38392857142856"/>
+        </scene>
+        <!--Qtwo View Controller-->
+        <scene sceneID="62J-bM-3UV">
+            <objects>
+                <viewController id="kAg-zJ-MJV" customClass="qtwoViewController" customModule="STEMinCOLOR_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JRB-PJ-pVo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27k-dL-1ha">
+                                <rect key="frame" x="148" y="103" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIG-Q6-HTm">
+                                <rect key="frame" x="122" y="214" width="171" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Where would you live?
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhZ-bT-GiM">
+                                <rect key="frame" x="154" y="325" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Washington DC"/>
+                                <connections>
+                                    <action selector="jackson2:" destination="kAg-zJ-MJV" eventType="touchUpInside" id="KpE-Qs-tzY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xf1-7N-aJH">
+                                <rect key="frame" x="146" y="427" width="122" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Washington State"/>
+                                <connections>
+                                    <action selector="ball2:" destination="kAg-zJ-MJV" eventType="touchUpInside" id="vL0-Aa-4aC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kqv-3k-ij4">
+                                <rect key="frame" x="182" y="512" width="51" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Virginia"/>
+                                <connections>
+                                    <action selector="west2:" destination="kAg-zJ-MJV" eventType="touchUpInside" id="3WM-yw-7bx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yiS-2Z-SIy">
+                                <rect key="frame" x="177" y="575" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Alabama"/>
+                                <connections>
+                                    <action selector="easley2:" destination="kAg-zJ-MJV" eventType="touchUpInside" id="UTD-aC-lXi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rH-5h-c3D">
+                                <rect key="frame" x="162" y="634" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="West Virginia"/>
+                                <connections>
+                                    <action selector="Johnson2:" destination="kAg-zJ-MJV" eventType="touchUpInside" id="iGL-st-CEI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="2Hw-hK-3yt"/>
+                    </view>
+                    <connections>
+                        <outlet property="ques2" destination="JIG-Q6-HTm" id="QdX-37-uo1"/>
+                        <outlet property="t2" destination="27k-dL-1ha" id="RYa-CX-C12"/>
+                        <segue destination="elL-Ib-eyd" kind="presentation" identifier="twotothree" id="Tra-Rv-ziL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kr3-Zw-Ztt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1724.6376811594205" y="830.35714285714278"/>
+        </scene>
+        <!--Qthree View Controller-->
+        <scene sceneID="V4X-9d-hs2">
+            <objects>
+                <viewController id="elL-Ib-eyd" customClass="qthreeViewController" customModule="STEMinCOLOR_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wtb-dP-sIA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7b-zh-Mvz">
+                                <rect key="frame" x="154" y="360" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="A chemistry lab"/>
+                                <connections>
+                                    <action selector="ball3:" destination="elL-Ib-eyd" eventType="touchUpInside" id="sFP-f5-WTU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vy-8Y-dq9">
+                                <rect key="frame" x="122" y="78" width="170" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMH-JV-s00">
+                                <rect key="frame" x="43" y="220" width="328" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Which working environment do you prefer?
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lM-t4-hrA">
+                                <rect key="frame" x="59" y="441" width="296" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="A room filled with computers and machines"/>
+                                <connections>
+                                    <action selector="Johnson3:" destination="elL-Ib-eyd" eventType="touchUpInside" id="l5G-pi-3pH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3oH-cB-J5l">
+                                <rect key="frame" x="37" y="518" width="340" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Testing out the science behind launching a rocket"/>
+                                <connections>
+                                    <action selector="easley3:" destination="elL-Ib-eyd" eventType="touchUpInside" id="Np1-cQ-tdh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="76W-Bh-hPW">
+                                <rect key="frame" x="72" y="582" width="283" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <string key="title">Solving equations to figure out the distance between geographical locations
+</string>
+                                </state>
+                                <connections>
+                                    <action selector="west3:" destination="elL-Ib-eyd" eventType="touchUpInside" id="NPx-Qe-wUW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYe-sN-44Y">
+                                <rect key="frame" x="67" y="678" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="A classroom filled with university students"/>
+                                <connections>
+                                    <action selector="jackson3:" destination="elL-Ib-eyd" eventType="touchUpInside" id="Cid-BD-fx0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="5H8-LL-hsm"/>
+                    </view>
+                    <connections>
+                        <segue destination="dCi-MW-p3L" kind="presentation" identifier="threetofour" id="4Nc-qT-Yar"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Ct-Aa-INk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2434.7826086956525" y="832.36607142857144"/>
+        </scene>
+        <!--Qfour View Controller-->
+        <scene sceneID="QRh-My-FeC">
+            <objects>
+                <viewController id="dCi-MW-p3L" customClass="qfourViewController" customModule="STEMinCOLOR_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kHc-Ev-77Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNa-zw-MZW">
+                                <rect key="frame" x="148" y="91" width="147" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SzN-bn-d7o">
+                                <rect key="frame" x="66" y="241" width="310" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Which discovery interests you the most?
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egK-gp-1Tg">
+                                <rect key="frame" x="62" y="466" width="291" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="The creation of the Caller ID/Caller Waiting"/>
+                                <connections>
+                                    <action selector="jackson4:" destination="dCi-MW-p3L" eventType="touchUpInside" id="b7A-ll-V6m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faR-A5-UdK">
+                                <rect key="frame" x="90" y="547" width="234" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="injectable oil treatment for leprosy"/>
+                                <connections>
+                                    <action selector="ball4:" destination="dCi-MW-p3L" eventType="touchUpInside" id="aCo-5K-KJT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6Q-Ng-WjY">
+                                <rect key="frame" x="99" y="614" width="217" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Helping send a person to space"/>
+                                <connections>
+                                    <action selector="Johnson4:" destination="dCi-MW-p3L" eventType="touchUpInside" id="wGc-Vk-1HM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqH-zL-QnE">
+                                <rect key="frame" x="101" y="692" width="213" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="developing modern hybrid cars"/>
+                                <connections>
+                                    <action selector="easley4:" destination="dCi-MW-p3L" eventType="touchUpInside" id="0Gt-6d-MdQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHQ-f6-PBc">
+                                <rect key="frame" x="177" y="406" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="The GPS"/>
+                                <connections>
+                                    <action selector="west4:" destination="dCi-MW-p3L" eventType="touchUpInside" id="KiV-iu-Iwa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="pOf-2J-UM3"/>
+                    </view>
+                    <connections>
+                        <segue destination="6xk-eg-Dcl" kind="presentation" identifier="fourtofive" id="pQO-zv-zKu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S3H-AD-cL1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3146" y="828"/>
+        </scene>
+        <!--Qfive View Controller-->
+        <scene sceneID="A9H-Ep-O6t">
+            <objects>
+                <viewController id="6xk-eg-Dcl" customClass="qfiveViewController" customModule="STEMinCOLOR_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GaG-BP-Eip">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1N-Zo-2GH">
+                                <rect key="frame" x="146" y="152" width="123" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rk2-sf-fM9">
+                                <rect key="frame" x="127" y="302" width="160" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">What motivates you?
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLP-8M-K11">
+                                <rect key="frame" x="165" y="487" width="84" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Your mentor"/>
+                                <connections>
+                                    <action selector="Johnson5:" destination="6xk-eg-Dcl" eventType="touchUpInside" id="QnF-Dm-exf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLf-Ha-fTP">
+                                <rect key="frame" x="113" y="563" width="188" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Your academic experiences"/>
+                                <connections>
+                                    <action selector="west5:" destination="6xk-eg-Dcl" eventType="touchUpInside" id="HsJ-qE-l6n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8de-E8-ajc">
+                                <rect key="frame" x="99" y="642" width="216" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="The idea of changing the future"/>
+                                <connections>
+                                    <action selector="jackson5:" destination="6xk-eg-Dcl" eventType="touchUpInside" id="Bmf-8K-HfA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61Y-BL-gNp">
+                                <rect key="frame" x="153" y="705" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="All of the above"/>
+                                <connections>
+                                    <action selector="ball5:" destination="6xk-eg-Dcl" eventType="touchUpInside" id="fXA-EP-7cG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wqc-f0-mr9">
+                                <rect key="frame" x="61" y="406" width="293" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="The limitations and hurdles you experience"/>
+                                <connections>
+                                    <action selector="easley5:" destination="6xk-eg-Dcl" eventType="touchUpInside" id="6rb-QW-KEq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4W-SK-exE">
+                                <rect key="frame" x="155" y="772" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="See My Results"/>
+                                <connections>
+                                    <action selector="nextbutton:" destination="6xk-eg-Dcl" eventType="touchUpInside" id="3KL-UK-UcY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="f2r-5J-eOZ"/>
+                    </view>
+                    <connections>
+                        <segue destination="FOb-mb-05w" kind="presentation" identifier="fivetoresults" id="WNX-Iz-SxU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="711-gK-f2t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3918.8405797101454" y="828.34821428571422"/>
+        </scene>
+        <!--Results View Controller-->
+        <scene sceneID="Qyh-pC-fhI">
+            <objects>
+                <viewController id="FOb-mb-05w" customClass="resultsViewController" customModule="STEMinCOLOR_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OWe-k9-keT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You are most like" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m77-sD-WMf">
+                                <rect key="frame" x="106" y="160" width="202" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a91-nm-YHP">
+                                <rect key="frame" x="189" y="740" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="2dB-XV-Wja"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjC-Nt-9t1">
+                                <rect key="frame" x="20" y="530" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TD8-7m-rNm">
+                                <rect key="frame" x="37" y="280" width="340" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="lqV-k1-vjK"/>
+                    </view>
+                    <connections>
+                        <outlet property="imagep" destination="TD8-7m-rNm" id="1JL-f6-wPl"/>
+                        <outlet property="lableee" destination="wjC-Nt-9t1" id="UJX-Av-xi7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y7i-ZO-kmQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4753.6231884057979" y="827.67857142857144"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="CAQ-53-FNX">
             <objects>
                 <viewController id="N1l-Pa-kki" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xVj-r8-ZFR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ANNE EASLEY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENu-p9-52y">
-                                <rect key="frame" x="103" y="341" width="208" height="41"/>
+                                <rect key="frame" x="103" y="304" width="208" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8K-zj-oep">
-                                <rect key="frame" x="20" y="390" width="374" height="472"/>
+                                <rect key="frame" x="20" y="359" width="374" height="472"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">A computer scientist, mathematician, and a rocket scientist
+                                <string key="text">A computer scientist, mathematician, and a rocket scientist
 A rocket scientist who worked on several Nasa projects for more than 30 years
 She was born in 1933 and was raised in Birmingham, Alabama 
 She was raised by her single mother who encouraged her and constantly let her know that she could anything that she wanted if she worked for it
@@ -87,19 +578,20 @@ She is most known for her work on the Centaur rocket, the first of its kind
 Struggles she faced at NASA as a woman of color:
 Wasn’t given the financial aid to pay for the extra college courses that were given to all other employees
 She was used in promotional photographs but where she saw that specific image of her, she was always cut out no matter where it was used, solely leaving her white counterparts in the photograph
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Anne Easley" translatesAutoresizingMaskIntoConstraints="NO" id="Ax7-Fw-xJu">
-                                <rect key="frame" x="67" y="57" width="280" height="263"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Annie Jean Easley" translatesAutoresizingMaskIntoConstraints="NO" id="Ax7-Fw-xJu">
+                                <rect key="frame" x="67" y="32" width="280" height="263"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.87990649559321177" green="0.88921073532418282" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="d4L-UH-tvT"/>
                     </view>
+                    <navigationItem key="navigationItem" id="sus-eW-xh5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FFd-fe-kOQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -110,17 +602,17 @@ She was used in promotional photographs but where she saw that specific image of
             <objects>
                 <viewController id="gRc-Jg-sGj" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="caY-6n-n9y">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dr. Gladys Mae West" translatesAutoresizingMaskIntoConstraints="NO" id="dVY-bz-lLZ">
-                                <rect key="frame" x="59" y="57" width="286" height="252"/>
+                                <rect key="frame" x="59" y="41" width="286" height="252"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLr-gF-jrv">
-                                <rect key="frame" x="20" y="367" width="374" height="503"/>
+                                <rect key="frame" x="20" y="338" width="374" height="503"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">American mathematician
+                                <string key="text">American mathematician
 Worked in astronomical studies
 She contributed to the mathematical model of the shape of Earth
 Her work would later be used in the GPS(Global Positioning System)
@@ -133,22 +625,23 @@ Despite creating the GPS, she still prefers making her own calculations and usin
 She was a human-computer, she later changed over to programming computers and other machines
 She worked in a study that proved the regularity of Pluto’s motion in relation to Neptune, using this knowledge, she later joined the Seasat project to precisely measure the distance over Earth’s surface
 At her first job at the Naval Surface Warfare Center, Dr. West was one of four black employees 
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DR. GLADYS MAE WEST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32i-Xa-Jag">
-                                <rect key="frame" x="42" y="326" width="330" height="39"/>
+                                <rect key="frame" x="42" y="306" width="330" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.95074782656986367" green="1" blue="0.98693225915984895" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="wD2-fD-Wsy"/>
                     </view>
+                    <navigationItem key="navigationItem" id="DGX-uL-dWb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HjN-AU-dTy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -159,10 +652,10 @@ At her first job at the Naval Surface Warfare Center, Dr. West was one of four b
             <objects>
                 <viewController id="RkV-MB-Xfj" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qh6-uT-deo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Alice Ball" translatesAutoresizingMaskIntoConstraints="NO" id="Usj-PM-sFQ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Alice Augusta Ball" translatesAutoresizingMaskIntoConstraints="NO" id="Usj-PM-sFQ">
                                 <rect key="frame" x="68" y="76" width="278" height="234"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -176,7 +669,7 @@ At her first job at the Naval Surface Warfare Center, Dr. West was one of four b
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLO-Gr-lcr">
                                 <rect key="frame" x="31" y="389" width="363" height="473"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">She was born in 1892 in Seattle Washington to a middle class to an upper-middle-class family 
+                                <string key="text">She was born in 1892 in Seattle Washington to a middle class to an upper-middle-class family 
 Her famous achievement was discovering the treatment of leprosy
 She studied the field of chemistry and medicine
 She was a chemist who developed an injectable oil treatment for leprosy that was the most effective until the 1940s, the treatment consisted of an injectable oil extract. This allowed her to become the first person to develop a water-soluble injectable form of chaulmoogra oil that helped relieve symptoms of Hansen’s disease.  She accomplished this when she was very young, she was just 23 at the time.
@@ -187,15 +680,16 @@ When applying to colleges she received numerous scholarships to pursue her studi
 She became the first woman and the first African American to graduate from the University of Hawaii with a master’s degree in 1915. She earned a degree in pharmaceutical chemistry as well as a degree in pharmacy.
 She received the highest award for her work, which is the Regents Medal of Distinction
 February 29 2000, was when Hawaii’s governor issued that this date would officially be known as Alice Paul Day
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.99727328688118289" green="0.96694240173895529" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="nAD-gE-YQe"/>
                     </view>
+                    <navigationItem key="navigationItem" id="FN5-Og-pEG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aj9-0R-LsD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -206,7 +700,7 @@ February 29 2000, was when Hawaii’s governor issued that this date would offic
             <objects>
                 <viewController id="Qcr-7l-MrW" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ce1-Wd-L1o">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dr. Shirley Jackson" translatesAutoresizingMaskIntoConstraints="NO" id="ar0-uO-hqh">
@@ -223,7 +717,7 @@ February 29 2000, was when Hawaii’s governor issued that this date would offic
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7E-Yl-pld">
                                 <rect key="frame" x="20" y="422" width="382" height="423"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Was born in Washington DC on August 5, 1946
+                                <string key="text">Was born in Washington DC on August 5, 1946
 In high school she graduated at the top of her class in 1964, she was in accelerated math and science program
 She is the first black woman to earn a doctorate from the Massachusetts Institute of Technology, she was also one of two black women to receive a doctorate in physics in the United States of America. Her degree was specifically in nuclear physics, this was also where she completed her bachelor’s degree. 
 She also received the National Medal of Science for Physical Science
@@ -233,15 +727,16 @@ She later became the 18th president of the oldest technological research univers
 She was also the first woman to serve as the president of the National Society of Black Physicists in 1983
 She received over 50 honorary doctoral degrees and has been appointed as Co-Chair of the President’s Intelligence Advisory in 2014 by Barack Obama
 Time Magazine also called Dr. Shirley Ann Jackson as “perhaps the ultimate role model for women in science” in 2005
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.82344995653250297" green="0.92530796689936246" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="3y0-CN-GMr"/>
                     </view>
+                    <navigationItem key="navigationItem" id="d4q-u7-vXQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wSc-bS-egM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -252,7 +747,7 @@ Time Magazine also called Dr. Shirley Ann Jackson as “perhaps the ultimate rol
             <objects>
                 <viewController id="eVC-Pv-IMK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oLP-zl-dpn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWd-nd-H16">
@@ -276,6 +771,7 @@ Cum ne exerci facilis nominavi, ne illum tractatos assentior vel, per stet malis
                         <color key="backgroundColor" red="0.96688983040330423" green="0.93771180289344569" blue="0.99691516160000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="d2O-sA-oEm"/>
                     </view>
+                    <navigationItem key="navigationItem" id="6wu-dk-nhc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vwn-tg-TeR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -286,14 +782,24 @@ Cum ne exerci facilis nominavi, ne illum tractatos assentior vel, per stet malis
             <objects>
                 <viewController id="yct-mX-j5q" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iOG-yv-3sW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQQ-Go-4UE">
-                                <rect key="frame" x="31" y="394" width="363" height="448"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="KATHERINE JOHNSON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TzF-c9-ltr">
+                                <rect key="frame" x="58" y="343" width="309" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Katherine Johnson
-Was born in 1918 in West Virginia
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Katherine Johnson" translatesAutoresizingMaskIntoConstraints="NO" id="j4B-ls-AJs">
+                                <rect key="frame" x="53" y="44" width="309" height="272"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQQ-Go-4UE">
+                                <rect key="frame" x="20" y="384" width="363" height="448"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">She was born in 1918 in West Virginia
 She worked as a human calculator during the space race in the 1950s and ’60s 
 She loved math from a very young age, was so skilled in subjects like math, that she can be considered a math prodigy
 The third African American to receive a PhD in mathematics recognized her gift and her exceptional abilities at math and encouraged her to pursue in this career(as a mathematician)  he even created a special class for her that was very advanced, covering geometry of outer space
@@ -313,21 +819,11 @@ She is known as a trailblazer
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="KATHERINE JOHNSON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TzF-c9-ltr">
-                                <rect key="frame" x="58" y="343" width="309" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="31"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Katherine Johnson" translatesAutoresizingMaskIntoConstraints="NO" id="j4B-ls-AJs">
-                                <rect key="frame" x="53" y="44" width="309" height="272"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="1" green="0.94840084056175322" blue="0.94902255605472607" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="lWx-n5-Uxt"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ot9-Pe-XOK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C8s-oH-5Dy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -338,11 +834,11 @@ She is known as a trailblazer
             <objects>
                 <viewController id="Hmp-Jg-Uyp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DvB-FS-8tr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FEX-WN-dAh">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NjK-Wf-BbB">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1400"/>
@@ -354,26 +850,41 @@ She is known as a trailblazer
                                                         <rect key="frame" x="0.0" y="-15" width="400" height="400"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" image="1"/>
+                                                        <connections>
+                                                            <segue destination="N1l-Pa-kki" kind="show" id="9d1-nW-NuM"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tE-4h-tlS">
                                                         <rect key="frame" x="8" y="509" width="400" height="400"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" image="3"/>
+                                                        <connections>
+                                                            <segue destination="yct-mX-j5q" kind="show" id="kvO-se-gCE"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXz-GO-nT2">
                                                         <rect key="frame" x="8" y="773" width="400" height="400"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" image="4"/>
+                                                        <connections>
+                                                            <segue destination="RkV-MB-Xfj" kind="show" id="U0D-hW-fD0"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOj-22-ahX">
                                                         <rect key="frame" x="14" y="1032" width="400" height="400"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" image="5"/>
+                                                        <connections>
+                                                            <segue destination="Qcr-7l-MrW" kind="show" id="u51-5N-Asu"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgm-am-HLp">
                                                         <rect key="frame" x="23" y="261" width="400" height="400"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" image="2"/>
+                                                        <connections>
+                                                            <segue destination="gRc-Jg-sGj" kind="show" id="l3x-3H-0Es"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="1" green="0.87914679929999995" blue="0.92638767440000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -404,6 +915,7 @@ She is known as a trailblazer
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RIO-kh-tVQ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="OFk-WN-c9P"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O5Q-N9-9BI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -416,8 +928,8 @@ She is known as a trailblazer
         <image name="3" width="1500" height="1500"/>
         <image name="4" width="1500" height="1500"/>
         <image name="5" width="1500" height="1500"/>
-        <image name="Alice Ball" width="238" height="238"/>
-        <image name="Anne Easley" width="498" height="498"/>
+        <image name="Alice Augusta Ball" width="238" height="238"/>
+        <image name="Annie Jean Easley" width="498" height="498"/>
         <image name="DEVELOPERS BUTTON" width="1500" height="1500"/>
         <image name="Dr. Gladys Mae West" width="267" height="267"/>
         <image name="Dr. Shirley Jackson" width="539" height="539"/>
